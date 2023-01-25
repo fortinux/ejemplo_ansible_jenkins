@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('build') {
+    stage('fetch') {
       steps {
         sh '''
           ansible --version
