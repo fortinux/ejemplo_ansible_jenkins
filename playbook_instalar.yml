@@ -1,0 +1,12 @@
+---
+
+- hosts: all
+  connection: local
+  become: yes
+  become_user: root
+  tasks:
+  - name: Install sysstat
+    apt:
+      name: sysstat
+      state: latest
+      update_cache: yes
